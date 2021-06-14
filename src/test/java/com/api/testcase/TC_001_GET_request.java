@@ -21,7 +21,7 @@ public class TC_001_GET_request {
 		RequestSpecification httpRequest=RestAssured.given();
 		
 		//Specify the response object
-		Response response=httpRequest.request(Method.GET, "/Hyderabad");
+		Response response=httpRequest.get("/Hyderabad");
 		
 		//Print the response body
 		String responseBody=response.getBody().asString();
